@@ -13,7 +13,7 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Button>
-      <TextArea fx:id="MessageTo" layoutX="14.0" layoutY="14.0" prefHeight="297.0" prefWidth="523.0" />
+      <TextArea fx:id="messageTo" layoutX="14.0" layoutY="14.0" prefHeight="297.0" prefWidth="523.0" />
       <TextField fx:id="message" layoutX="15.0" layoutY="335.0" onAction="#sendTo" onMouseDragEntered="#sendTo" prefHeight="39.0" prefWidth="433.0" promptText="Введите сообщение" />
       <Button layoutX="454.0" layoutY="356.0" mnemonicParsing="false" onAction="#clearTo" text="Очистить" textOverrun="WORD_ELLIPSIS">
          <font>
