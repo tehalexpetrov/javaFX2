@@ -6,15 +6,19 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="551.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <Button layoutX="454.0" layoutY="350.0" mnemonicParsing="false" onAction="#sendTo" text="Отправить" textOverrun="WORD_ELLIPSIS">
+      <Button layoutX="454.0" layoutY="323.0" mnemonicParsing="false" onAction="#sendTo" onMouseDragEntered="#sendTo" text="Отправить" textOverrun="WORD_ELLIPSIS">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Button>
       <TextArea fx:id="MessageTo" layoutX="14.0" layoutY="14.0" prefHeight="297.0" prefWidth="523.0" />
-      <TextField fx:id="message" layoutX="15.0" layoutY="346.0" prefHeight="39.0" prefWidth="433.0" promptText="Введите сообщение" />
+      <TextField fx:id="message" layoutX="15.0" layoutY="335.0" onAction="#sendTo" onMouseDragEntered="#sendTo" prefHeight="39.0" prefWidth="433.0" promptText="Введите сообщение" />
+      <Button layoutX="454.0" layoutY="356.0" mnemonicParsing="false" onAction="#clearTo" text="Очистить" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
    </children>
 </Pane>
