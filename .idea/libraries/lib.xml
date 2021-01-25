@@ -2,10 +2,12 @@
   <library name="lib">
     <CLASSES>
       <root url="file://$PATH_TO_FX$" />
+      <root url="jar://$PROJECT_DIR$/library/java-json.jar/java-json.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="file://$PATH_TO_FX$" />
+      <root url="jar://$PROJECT_DIR$/library/java-json.jar/java-json.jar!/" />
     </SOURCES>
     <jarDirectory url="file://$PATH_TO_FX$" recursive="false" />
     <jarDirectory url="file://$PATH_TO_FX$" recursive="false" type="SOURCES" />

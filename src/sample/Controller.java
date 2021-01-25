@@ -5,6 +5,9 @@ import javafx.scene.input.MouseDragEvent;
 
 
 public class Controller {
+
+    private ServerService serverService;
+
     @FXML
     private TextArea messageTo;
 
@@ -14,7 +17,6 @@ public class Controller {
     @FXML
     void sendTo() {
         String text = message.getText();
-//        MessageTo.setText(String.valueOf(text));
         messageTo.appendText(text + "\n");
         message.clear();
     }
