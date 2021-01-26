@@ -1,4 +1,4 @@
-package sample;
+package sample.server;
 
 public class Message {
     private String nick;
@@ -18,5 +18,13 @@ public class Message {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    @Override
+    public String toString() {
+        return "Message{" +
+                "nick='" + nick + '\'' +
+                ", message='" + message + '\'' +
+                '}';
     }
 }

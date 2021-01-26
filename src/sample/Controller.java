@@ -1,7 +1,8 @@
 package sample;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import javafx.scene.input.MouseDragEvent;
+import sample.client.ServerService;
+import sample.server.Message;
 
 
 public class Controller {

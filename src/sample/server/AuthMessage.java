@@ -1,13 +1,9 @@
-package sample;
+package sample.server;
 
 public class AuthMessage {
     private String login;
     private String password;
-    private boolean authentificated = false;
-
-    public boolean isAuthentificated() {
-        return authentificated;
-    }
+    private boolean authenticated = false;
 
     public String getLogin() {
         return login;
@@ -25,7 +21,11 @@ public class AuthMessage {
         this.password = password;
     }
 
-    public void setAuthentificated(boolean authentificated) {
-        this.authentificated = authentificated;
+    public boolean isAuthenticated() {
+        return authenticated;
+    }
+
+    public void setAuthenticated(boolean authenticated) {
+        this.authenticated = authenticated;
     }
 }
